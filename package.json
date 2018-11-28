@@ -51,5 +51,22 @@
     "yarn.lock": [
       "git rm --cached"
     ]
-  }
+  },
+  "name": "listers-demo",
+  "description": "Create React apps with no build configuration.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facebook/create-react-app.git"
+  },
+  "author": "Paul Marrable",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facebook/create-react-app/issues"
+  },
+  "homepage": "https://github.com/facebook/create-react-app#readme"
 }
