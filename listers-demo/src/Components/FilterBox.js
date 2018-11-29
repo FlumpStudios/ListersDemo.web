@@ -1,18 +1,25 @@
 import React from 'react';
-
+import Checkbox from '@material-ui/core/Checkbox';
+import InputLabel from '@material-ui/core/InputLabel';
 class FilterBox extends React.Component {
   render() {
     return (
       <td>
-        <input
-          type="checkBox"
+        <Checkbox
+          style={
+            this.props.hideBox
+              ? { display: 'none' }
+              : { display: 'inlineBlock' }
+          }
           checked={this.props.isChecked}
           id={this.props.id}
           onChange={this.props.onChange}
           value={this.props.value}
         />
 
-        <label htmlFor={this.props.id}>{this.props.text}</label>
+        <InputLabel style={{ cursor: 'pointer' }} htmlFor={this.props.id}>
+          {this.props.text}
+        </InputLabel>
       </td>
     );
   }
